@@ -1,5 +1,5 @@
 const message =
-  "¡Hola! Me interesa contratarte para crear una landing page o una página web. ¿Podrías pasarme una cotización?";
+  "¡Hola! Vi tu portafolio y me interesa armar una landing page / página web. ¿Cómo podemos avanzar para ver precios y tiempos?";
 
 function WhatsAppButton() {
   const whatsappUrl = `https://wa.me/5491151458255?text=${encodeURIComponent(message)}`;
