@@ -43,13 +43,20 @@ function Projects() {
                     Ver demo <span aria-hidden="true">↗</span>
                   </a>
                 )}
-                <a
-                  href={project.repositoryUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ver repositorio <span aria-hidden="true">↗</span>
-                </a>
+                {project.videoUrl && (
+                  <a href={project.videoUrl} target="_blank" rel="noreferrer">
+                    Ver presentación <span aria-hidden="true">↗</span>
+                  </a>
+                )}
+                {project.repositoryUrl && (
+                  <a
+                    href={project.repositoryUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ver repositorio <span aria-hidden="true">↗</span>
+                  </a>
+                )}
               </div>
             </div>
           </article>

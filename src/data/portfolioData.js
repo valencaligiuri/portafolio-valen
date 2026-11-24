@@ -1,5 +1,7 @@
 // Editá este archivo para actualizar los textos, enlaces y proyectos.
 // Los componentes solo presentan estos datos; no hace falta cambiar su lógica.
+import turnosYaPresentation from "../assets/turnosya-presentacion.mp4";
+
 const linkedinUrl = "https://www.linkedin.com/in/valentin-caligiuri-fazio-124a8732a/";
 
 export const portfolioData = {
@@ -59,6 +61,16 @@ export const portfolioData = {
       demoUrl: "https://valencaligiuri.github.io/presupuestador/",
       repositoryUrl: "https://github.com/valencaligiuri/presupuestador",
       style: "project-card--peach",
+    },
+    {
+      id: 4,
+      number: "04",
+      title: "TurnosYa — sistema de turnos",
+      description:
+        "Sistema de reservas para un estudio odontológico: permite elegir servicios y horarios, y administrar turnos desde un panel protegido.",
+      tags: ["Next.js", "TypeScript", "Prisma", "SQLite"],
+      videoUrl: turnosYaPresentation,
+      style: "project-card--green",
     },
   ],
 };
