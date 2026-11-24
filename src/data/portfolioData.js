@@ -33,44 +33,31 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      number: "01",
-      title: "MTasks — gestor de tareas",
+      title: "TurnosYa — Sistema de reservas online",
       description:
-        "Aplicación full-stack para organizar tareas, seguir el progreso y proteger el acceso con contraseña.",
-      tags: ["Vue 3", "TypeScript", "Go", "SQLite"],
-      repositoryUrl: "https://github.com/valencaligiuri/MTasks",
+        "Plataforma web para agendar turnos de forma automática, evitar superposiciones de horarios y reducir ausencias mediante recordatorios.",
+      tags: ["Next.js", "TypeScript", "Prisma", "SQLite"],
+      videoUrl: turnosYaPresentation,
       style: "project-card--green",
     },
     {
       id: 2,
-      number: "02",
-      title: "SScreen — pantalla en red local",
+      title: "Presupuestador — Cotizaciones rápidas",
       description:
-        "Herramienta para transmitir la pantalla en una red local, construida con Flask y OpenCV.",
-      tags: ["Python", "Flask", "OpenCV"],
-      repositoryUrl: "https://github.com/valencaligiuri/SScreen",
+        "Herramienta web para importar catálogos, calcular presupuestos al instante y exportar versiones profesionales listas para enviar a clientes.",
+      tags: ["Vue 3", "TypeScript", "Vite"],
+      demoUrl: "https://valencaligiuri.github.io/presupuestador/",
+      repositoryUrl: "https://github.com/valencaligiuri/presupuestador",
       style: "project-card--lavender",
     },
     {
       id: 3,
-      number: "03",
-      title: "Presupuestador — presupuestos y cotizaciones",
+      title: "MTasks — Gestión operativa de tareas",
       description:
-        "Aplicación para importar catálogos, preparar presupuestos y exportar versiones para clientes y uso interno.",
-      tags: ["Vue 3", "TypeScript", "Vite"],
-      demoUrl: "https://valencaligiuri.github.io/presupuestador/",
-      repositoryUrl: "https://github.com/valencaligiuri/presupuestador",
+        "Aplicación full-stack con acceso protegido para organizar flujos de trabajo, asignar prioridades y seguir el avance diario de proyectos.",
+      tags: ["Vue 3", "TypeScript", "Go", "SQLite"],
+      repositoryUrl: "https://github.com/valencaligiuri/MTasks",
       style: "project-card--peach",
-    },
-    {
-      id: 4,
-      number: "04",
-      title: "TurnosYa — sistema de turnos",
-      description:
-        "Sistema de reservas para un estudio odontológico: permite elegir servicios y horarios, y administrar turnos desde un panel protegido.",
-      tags: ["Next.js", "TypeScript", "Prisma", "SQLite"],
-      videoUrl: turnosYaPresentation,
-      style: "project-card--green",
     },
   ],
 };

@@ -13,13 +13,15 @@ function Projects() {
       </div>
 
       <div className="project-grid">
-        {portfolioData.projects.map((project) => (
+        {portfolioData.projects.map((project, index) => (
           <article
             className={`project-card ${project.style}`}
             key={project.id}
           >
             <div className="project-visual">
-              <span className="project-number">{project.number}</span>
+              <span className="project-number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
               <span className="project-visual-mark" aria-hidden="true">
                 ✳
               </span>
@@ -38,17 +40,15 @@ function Projects() {
                 ))}
               </ul>
               <div className="project-links">
-                {project.demoUrl && (
+                {project.demoUrl ? (
                   <a href={project.demoUrl} target="_blank" rel="noreferrer">
                     Ver demo <span aria-hidden="true">↗</span>
                   </a>
-                )}
-                {project.videoUrl && (
+                ) : project.videoUrl ? (
                   <a href={project.videoUrl} target="_blank" rel="noreferrer">
                     Ver presentación <span aria-hidden="true">↗</span>
                   </a>
-                )}
-                {project.repositoryUrl && (
+                ) : project.repositoryUrl ? (
                   <a
                     href={project.repositoryUrl}
                     target="_blank"
@@ -56,7 +56,7 @@ function Projects() {
                   >
                     Ver repositorio <span aria-hidden="true">↗</span>
                   </a>
-                )}
+                ) : null}
               </div>
             </div>
           </article>
