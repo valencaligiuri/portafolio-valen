@@ -4,7 +4,7 @@ const linkedinUrl = "https://www.linkedin.com/in/valentin-caligiuri-fazio-124a87
 
 export const portfolioData = {
   name: "Valentin Caligiuri Fazio",
-  displayName: "Valentin",
+  displayName: "MaKo",
   linkedinUrl,
   role: "Desarrollador frontend",
   location: "Buenos Aires, Argentina",
