@@ -631,6 +631,34 @@ h2 {
   font-size: 11px;
 }
 
+.whatsapp-float {
+  position: fixed;
+  z-index: 10;
+  right: 24px;
+  bottom: 24px;
+  display: grid;
+  width: 58px;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 8px 24px #00000045;
+  transition:
+    transform 160ms ease,
+    background 160ms ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+  background: #20bd5a;
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+}
+
 .footer {
   display: flex;
   min-height: 88px;
@@ -727,6 +755,12 @@ h2 {
 @media (max-width: 440px) {
   .container {
     width: min(100% - 32px, 560px);
+  }
+
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    width: 54px;
   }
 
   .nav-links {
