@@ -49,5 +49,16 @@ export const portfolioData = {
       repositoryUrl: "https://github.com/valencaligiuri/SScreen",
       style: "project-card--lavender",
     },
+    {
+      id: 3,
+      number: "03",
+      title: "Presupuestador — presupuestos y cotizaciones",
+      description:
+        "Aplicación para importar catálogos, preparar presupuestos y exportar versiones para clientes y uso interno.",
+      tags: ["Vue 3", "TypeScript", "Vite"],
+      demoUrl: "https://valencaligiuri.github.io/presupuestador/",
+      repositoryUrl: "https://github.com/valencaligiuri/presupuestador",
+      style: "project-card--peach",
+    },
   ],
 };
