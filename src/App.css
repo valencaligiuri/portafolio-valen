@@ -343,17 +343,6 @@ h2 {
   font-size: 17px;
 }
 
-.art-note {
-  position: absolute;
-  bottom: 15%;
-  left: 9%;
-  color: #9aabb1;
-  font-family: var(--serif);
-  font-size: 11px;
-  font-style: italic;
-  transform: rotate(-12deg);
-}
-
 .section-shell {
   background: var(--surface);
 }
@@ -608,9 +597,24 @@ h2 {
 }
 
 .contact-copy {
-  margin: 20px 0 25px;
+  margin: 20px 0 8px;
   color: #a0afb4;
   font-size: 13px;
+}
+
+.contact-response-time {
+  margin: 0 0 25px;
+  color: #82949b;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.contact-email-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .button-light {
@@ -620,6 +624,49 @@ h2 {
 
 .button-light:hover {
   background: #64effa;
+}
+
+.copy-email-button {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid #40515b;
+  border-radius: 50%;
+  background: transparent;
+  color: #bdcbd0;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease,
+    background 160ms ease;
+}
+
+.copy-email-button:hover {
+  border-color: var(--accent);
+  background: #1de3f510;
+  color: var(--accent);
+}
+
+.copy-email-button svg {
+  width: 17px;
+  height: 17px;
+}
+
+.copy-feedback {
+  min-width: 74px;
+  color: #85d9b2;
+  font-size: 11px;
+  text-align: left;
+}
+
+.copy-feedback:empty {
+  display: none;
+}
+
+.copy-feedback--error {
+  color: #ffaaa3;
 }
 
 .social-links {
@@ -680,6 +727,12 @@ h2 {
 
 .back-to-top {
   font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    padding-right: 82px;
+  }
 }
 
 @media (max-width: 760px) {

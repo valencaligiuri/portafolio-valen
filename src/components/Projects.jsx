@@ -6,10 +6,10 @@ function Projects() {
     <section className="projects container" id="proyectos">
       <div className="section-heading">
         <div>
-          <p className="eyebrow section-kicker">COSAS QUE HICE</p>
+          <p className="eyebrow section-kicker">Portafolio</p>
           <h2>Proyectos <span>seleccionados.</span></h2>
         </div>
-        <p className="section-aside">Una selección de ideas hechas realidad.</p>
+        <p className="section-aside">Sistemas web diseñados para ahorrar tiempo y ordenar procesos.</p>
       </div>
 
       <div className="project-grid">

@@ -24,7 +24,7 @@ function Hero() {
             Mirá mis proyectos <span aria-hidden="true">↓</span>
           </a>
           <a className="text-link" href={`mailto:${portfolioData.email}`}>
-            Contactame <span aria-hidden="true">↗</span>
+            Escribime <span aria-hidden="true">↗</span>
           </a>
         </div>
 
@@ -46,7 +46,6 @@ function Hero() {
         </div>
         <span className="art-spark art-spark-one" aria-hidden="true">✳</span>
         <span className="art-spark art-spark-two" aria-hidden="true">✳</span>
-        <span className="art-note" aria-hidden="true">hecho con curiosidad</span>
       </div>
     </section>
   );

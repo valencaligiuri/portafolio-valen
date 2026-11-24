@@ -8,10 +8,10 @@ export const portfolioData = {
   name: "Valentin Caligiuri Fazio",
   displayName: "MaKo",
   linkedinUrl,
-  role: "Desarrollador frontend",
+  role: "Desarrollador Web & Automatizaciones",
   location: "Buenos Aires, Argentina",
   intro:
-    "Transformo ideas en experiencias digitales simples, cuidadas y fáciles de usar.",
+    "Creo webs, sistemas de gestión y automatizaciones simples que ahorran tiempo y ordenan procesos.",
   about:
     "Me gusta crear cosas para internet y resolver problemas con diseño y código. " +
     "Estoy aprendiendo y construyendo proyectos para convertir cada idea en algo real.",
@@ -28,7 +28,6 @@ export const portfolioData = {
   ],
   socialLinks: [
     { label: "GitHub", href: "https://github.com/valencaligiuri" },
-    { label: "LinkedIn", href: linkedinUrl },
   ],
   projects: [
     {
