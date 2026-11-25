@@ -36,6 +36,7 @@ export const portfolioData = {
       description:
         "Plataforma web para agendar turnos de forma automática, evitar superposiciones de horarios y reducir ausencias mediante recordatorios.",
       tags: ["Next.js", "TypeScript", "Prisma", "SQLite"],
+      demoUrl: "https://turnitos-ya.vercel.app/demo",
       videoUrl: turnosYaPresentation,
       style: "project-card--green",
     },

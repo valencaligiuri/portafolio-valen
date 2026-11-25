@@ -40,15 +40,17 @@ function Projects() {
                 ))}
               </ul>
               <div className="project-links">
-                {project.demoUrl ? (
+                {project.demoUrl && (
                   <a href={project.demoUrl} target="_blank" rel="noreferrer">
                     Ver demo <span aria-hidden="true">↗</span>
                   </a>
-                ) : project.videoUrl ? (
+                )}
+                {project.videoUrl && (
                   <a href={project.videoUrl} target="_blank" rel="noreferrer">
                     Ver presentación <span aria-hidden="true">↗</span>
                   </a>
-                ) : project.repositoryUrl ? (
+                )}
+                {!project.demoUrl && !project.videoUrl && project.repositoryUrl && (
                   <a
                     href={project.repositoryUrl}
                     target="_blank"
@@ -56,7 +58,7 @@ function Projects() {
                   >
                     Ver repositorio <span aria-hidden="true">↗</span>
                   </a>
-                ) : null}
+                )}
               </div>
             </div>
           </article>
